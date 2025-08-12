@@ -1,3 +1,9 @@
+// tap: semicolon | shift + tap: colon
+ZMK_MOD_MORPH(semi_colon,
+    bindings = <&kp SEMI>, <&kp COLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: backspace | shift + tap: delete
 ZMK_MOD_MORPH(bspc_del,
     bindings = <&kp BSPC>, <&kp DEL>;
