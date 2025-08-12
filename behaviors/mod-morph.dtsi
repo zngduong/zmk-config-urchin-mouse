@@ -4,9 +4,9 @@ ZMK_MOD_MORPH(bspc_del,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: backspace | shift + tap: delete | hold: nav layer
-ZMK_MOD_MORPH(bs_del_nav,
-    bindings = <&lt NAV BSPC>, <&kp DEL>;
+// tap: backspace | shift + tap: delete | hold: sym layer
+ZMK_MOD_MORPH(bs_del_sym,
+    bindings = <&lt SYM BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -46,9 +46,9 @@ ZMK_MOD_MORPH(num_esc_clk,
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
-// hold: symbol layer | tap: space | shift + tap: non-breaking space
-ZMK_MOD_MORPH(sp_nbsp_sym,
-    bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
+// tap: space | shift + tap: non-breaking space
+ZMK_MOD_MORPH(sp_nbsp,
+    bindings = <&kp SPACE>, <&kp RALT(SPACE)>;
     mods = <(MOD_LSFT)>;
 )
 
